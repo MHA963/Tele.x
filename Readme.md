@@ -1,0 +1,1 @@
+# python app for reposting from telegram to X 
