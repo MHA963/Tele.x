@@ -4,7 +4,7 @@ from x_handler import post_to_twitter, can_tweet
 from datetime import datetime
 
 def run_scheduler():
-    """جدولة النشر كل 30 دقيقة"""
+    # running scheduler every 30 minutes
     while True:
         current_minute = datetime.now().minute
         if current_minute == 0 or current_minute == 30:  # بداية الساعة ونهايتها

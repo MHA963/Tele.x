@@ -4,7 +4,7 @@ from config import TELEGRAM_BOT_TOKEN, TELEGRAM_CHANNELS
 bot = telegram.Bot(token=TELEGRAM_BOT_TOKEN)
 
 def fetch_latest_news():
-    """جلب آخر الأخبار من القنوات المحددة"""
+    """fetching from certain telegram channels"""
     for channel in TELEGRAM_CHANNELS:
         updates = bot.get_updates()
         for update in updates:
